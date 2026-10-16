@@ -1,0 +1,38 @@
+# CMake
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+.ninja_deps
+.ninja_log
+build.ninja
+
+# C++ compilation
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+*.out
+*.gch
+*.pch
+
+# Debugging
+*.core
+core
+core.*
+
+# VS Code - local settings
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# External libraries
+ProgrammingPrinciplesAndPracticeUsingQt/
+
+# Local executables
+/main
