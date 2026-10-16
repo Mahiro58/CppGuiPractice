@@ -1,0 +1,4 @@
+set(__QT_DEPLOY_TARGET_StroustrupGUI_FILE /home/mahiro/Code/Cpp/CppGuiPractice/build/libStroustrupGUI.a)
+set(__QT_DEPLOY_TARGET_StroustrupGUI_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_CppGuiPractice_FILE /home/mahiro/Code/Cpp/CppGuiPractice/build/CppGuiPractice)
+set(__QT_DEPLOY_TARGET_CppGuiPractice_TYPE EXECUTABLE)
