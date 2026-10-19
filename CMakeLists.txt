@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(CppGuiPractice LANGUAGES CXX)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -21,6 +22,14 @@ add_library(StroustrupGUI STATIC
     ${LIB_DIR}/GUI.cpp
     ${LIB_DIR}/Simple_window.cpp
     ${LIB_DIR}/Colormap.cpp
+
+    ${LIB_DIR}/PPP/Window.h
+    ${LIB_DIR}/PPP/Graph.h
+    ${LIB_DIR}/PPP/GUI.h
+    ${LIB_DIR}/PPP/Simple_window.h
+    ${LIB_DIR}/PPP/Point.h
+    ${LIB_DIR}/PPP/GUI_private.h
+    ${LIB_DIR}/PPP/Image_private.h
 )
 
 target_include_directories(StroustrupGUI PUBLIC

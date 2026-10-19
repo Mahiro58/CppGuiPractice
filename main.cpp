@@ -1,7 +1,20 @@
 #include <iostream>
+#include "PPP/Simple_window.h"
+#include "PPP/Graph.h"
+
 
 int main(){
-    std::cout<<"Hello world!"<<std::endl;
-    std::cout<<"Test\n";
+    using namespace Graph_lib;
+
+    Application app;
+
+    Point t1 {900,500};
+    Simple_window win {t1, 600, 400, "Kanwa"};
+    
+    Axis xa{Axis::x, Point(20,300), 280, 10, "Os x"};
+    win.attach(xa);
+    win.set_label("Os x");
+    win.wait_for_button();
+
     return 0;
 }
