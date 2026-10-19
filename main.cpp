@@ -14,7 +14,13 @@ int main(){
     Axis xa{Axis::x, Point(20,300), 280, 10, "Os x"};
     win.attach(xa);
     win.set_label("Os x");
+
+    Axis ya{Axis::y, Point(20,300), 280, 10, "Os y"};
+    win.attach(ya);
+    win.set_label("Os y");
+    
     win.wait_for_button();
+
 
     return 0;
 }
