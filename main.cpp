@@ -36,6 +36,7 @@ int main(){
     poly_rect.add(Point{200, 50});
     poly_rect.add(Point{200, 100});
     poly_rect.add(Point{100, 100});
+    poly_rect.add(Point{50, 75});
     win.attach(poly_rect);
     
     Axis xa{Axis::x, Point(20,300), 280, 10, "Os x"};
