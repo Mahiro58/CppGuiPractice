@@ -13,11 +13,22 @@ int main(){
     Application app;
 
     Point t1 {900,500};
-    Simple_window win {t1, 600, 400, "Kanwa"};
+    Simple_window win {t1, 800, 600, "Kanwa"};
 
     Function sine {dsin, 0, 100, Point(20,150), 1000, 50, 50};
     win.attach(sine);
     win.set_label("Sinus");
+
+    sine.set_color(Color::blue);
+
+    Polygon poly;
+    poly.add(Point{300, 200});
+    poly.add(Point{350, 100});
+    poly.add(Point{400, 200});
+
+    poly.set_color(Color::red);
+    win.attach(poly);
+    win.set_label("Trojkat");
     
     Axis xa{Axis::x, Point(20,300), 280, 10, "Os x"};
     win.attach(xa);
