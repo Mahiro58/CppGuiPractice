@@ -17,7 +17,6 @@ int main(){
 
     Function sine {dsin, 0, 100, Point(20,150), 1000, 50, 50};
     win.attach(sine);
-    win.set_label("Sinus");
 
     sine.set_color(Color::blue);
 
@@ -28,22 +27,24 @@ int main(){
 
     poly.set_color(Color::red);
     win.attach(poly);
-    win.set_label("Trojkat");
 
     Rectangle r (Point{200, 200}, 100, 50);
     win.attach(r);
-    win.set_label("Prostokat");
 
-    
+    Closed_polyline poly_rect;
+    poly_rect.add(Point{100, 50});
+    poly_rect.add(Point{200, 50});
+    poly_rect.add(Point{200, 100});
+    poly_rect.add(Point{100, 100});
+    win.attach(poly_rect);
     
     Axis xa{Axis::x, Point(20,300), 280, 10, "Os x"};
     win.attach(xa);
-    win.set_label("Os x");
 
     Axis ya{Axis::y, Point(20,300), 280, 10, "Os y"};
     win.attach(ya);
-    win.set_label("Os y");
     
+    win.set_label("Test");
     win.wait_for_button();
 
 
