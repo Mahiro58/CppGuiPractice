@@ -43,6 +43,11 @@ int main(){
 
     Axis ya{Axis::y, Point(20,300), 280, 10, "Os y"};
     win.attach(ya);
+
+    r.set_fill_color(Color::yellow);
+    poly.set_style(Line_style(Line_style::dash, 4));
+    poly_rect.set_style(Line_style(Line_style::dash, 2));
+    poly_rect.set_fill_color(Color::green);
     
     win.set_label("Test");
     win.wait_for_button();
