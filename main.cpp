@@ -49,6 +49,9 @@ int main(){
     poly.set_style(Line_style(Line_style::dash, 4));
     poly_rect.set_style(Line_style(Line_style::dash, 2));
     poly_rect.set_fill_color(Color::green);
+
+    Text t {Point{150, 150}, "Hello world!"};
+    win.attach(t);
     
     win.set_label("Test");
     win.wait_for_button();
