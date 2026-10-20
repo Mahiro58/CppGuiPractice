@@ -29,6 +29,12 @@ int main(){
     poly.set_color(Color::red);
     win.attach(poly);
     win.set_label("Trojkat");
+
+    Rectangle r (Point{200, 200}, 100, 50);
+    win.attach(r);
+    win.set_label("Prostokat");
+
+    
     
     Axis xa{Axis::x, Point(20,300), 280, 10, "Os x"};
     win.attach(xa);
