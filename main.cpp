@@ -22,13 +22,15 @@ int main(){
 
     Polygon poly;
     poly.add(Point{300, 200});
-    poly.add(Point{350, 100});
-    poly.add(Point{400, 200});
+    poly.add(Point{300, 350});
+    poly.add(Point{500, 350});
+    poly.add(Point{500, 200});
 
     poly.set_color(Color::red);
     win.attach(poly);
 
     Rectangle r (Point{200, 200}, 100, 50);
+    r.set_color(Color::blue);
     win.attach(r);
 
     Closed_polyline poly_rect;
@@ -44,11 +46,6 @@ int main(){
 
     Axis ya{Axis::y, Point(20,300), 280, 10, "Os y"};
     win.attach(ya);
-
-    r.set_fill_color(Color::yellow);
-    poly.set_style(Line_style(Line_style::dash, 4));
-    poly_rect.set_style(Line_style(Line_style::dash, 2));
-    poly_rect.set_fill_color(Color::green);
 
     Text t {Point{150, 150}, "Hello world!"};
     win.attach(t);
