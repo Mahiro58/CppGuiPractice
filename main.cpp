@@ -29,9 +29,11 @@ int main(){
     poly.set_color(Color::red);
     win.attach(poly);
 
-    Rectangle r (Point{200, 200}, 100, 50);
+    Rectangle r (Point{200, 200}, 100, 30);
     r.set_color(Color::blue);
     win.attach(r);
+    Text txt {Point{210, 210}, "Hello"};
+    win.attach(txt);
 
     Closed_polyline poly_rect;
     poly_rect.add(Point{100, 50});
