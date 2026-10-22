@@ -13,7 +13,7 @@ int main(){
     Application app;
 
     Point t1 {900,500};
-    Simple_window win {t1, 800, 600, "Kanwa"};
+    Simple_window win {t1, 1000, 800, "Kanwa"};
 
     Function sine {dsin, 0, 100, Point(20,150), 1000, 50, 50};
     win.attach(sine);
