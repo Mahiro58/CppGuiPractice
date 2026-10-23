@@ -31,15 +31,23 @@ int main(){
         }
 
     win.attach(grid);
-    Rectangle r (Point{x_rect, y_rect}, 80, 40);
-    // r.set_color(Color::red);
-    r.set_fill_color(Color::red);
-    win.attach(r);
-    for (int i = 0; i < 8; i++){
-        x_rect += 80;
-        y_rect += 40;
-        r.set_fill_color(Color::red);
-        win.attach(r);
+    
+    std::vector<std::unique_ptr<Rectangle>> rectangles;
+
+    for (int i = 0; i < 8; i++) {
+
+        int x = i * 80;
+        int y = i * 40;
+
+        auto rect = std::make_unique<Rectangle>(
+            Point{x, y}, 80, 40
+        );
+
+        rect->set_fill_color(Color::red);
+
+        win.attach(*rect);
+
+        rectangles.push_back(std::move(rect));
     }
 
     /*
