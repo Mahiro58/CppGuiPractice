@@ -19,6 +19,8 @@ int main(){
     int y_size = win.y_max();
     int x_grid = 80;
     int y_grid = 40;
+    int x_rect = 0;
+    int y_rect = 0;
 
     Lines grid;
         for(int x = x_grid; x < x_size; x+=x_grid){
@@ -29,6 +31,16 @@ int main(){
         }
 
     win.attach(grid);
+    Rectangle r (Point{x_rect, y_rect}, 80, 40);
+    // r.set_color(Color::red);
+    r.set_fill_color(Color::red);
+    win.attach(r);
+    for (int i = 0; i < 8; i++){
+        x_rect += 80;
+        y_rect += 40;
+        r.set_fill_color(Color::red);
+        win.attach(r);
+    }
 
     /*
     Function sine {dsin, 0, 100, Point(20,150), 1000, 50, 50};
