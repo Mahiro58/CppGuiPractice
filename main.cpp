@@ -43,7 +43,7 @@ int main(){
             Point{x, y}, 80, 40
         );
 
-        rect->set_fill_color(Color::red);
+        rect->set_fill_color(Color::blue);
 
         win.attach(*rect);
 
