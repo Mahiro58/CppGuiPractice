@@ -15,6 +15,7 @@ int main(){
     Point t1 {900,500};
     Simple_window win {t1, 1000, 800, "Kanwa"};
 
+    /*
     int x_size = win.x_max();
     int y_size = win.y_max();
     int x_grid = 80;
@@ -49,6 +50,7 @@ int main(){
 
         rectangles.push_back(std::move(rect));
     }
+    */
 
     /*
     Function sine {dsin, 0, 100, Point(20,150), 1000, 50, 50};
