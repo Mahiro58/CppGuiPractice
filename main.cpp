@@ -6,6 +6,7 @@
         return sin(d);
     }
 
+    // learning about C++ GUI
 
 int main(){
     using namespace Graph_lib;
