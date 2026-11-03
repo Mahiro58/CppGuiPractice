@@ -2,9 +2,11 @@
 
 #include "PPP/Simple_window.h"
 
-class Board{
-    public:
+class Board {
+public:
+    Board(Simple_window& window);
 
-    private:
-        int x_size;
+private:
+    Simple_window& window;
+    int x_size;
 };
