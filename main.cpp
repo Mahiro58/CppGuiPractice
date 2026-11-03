@@ -14,9 +14,10 @@ int main(){
     Application app;
 
     Point t1 {900,500};
-    Simple_window win {t1, 1000, 800, "Kanwa"};
+    Simple_window win {t1, 800, 600, "Window"};
 
 
+    /*
     int x_size = win.x_max();
     int y_size = win.y_max();
     int x_grid = 80;
@@ -51,35 +52,37 @@ int main(){
 
         rectangles.push_back(std::move(rect));
     }
+    */
 
-    /*
     Function sine {dsin, 0, 100, Point(20,150), 1000, 50, 50};
     win.attach(sine);
 
     sine.set_color(Color::blue);
 
-    Polygon poly;
-    poly.add(Point{300, 200});
-    poly.add(Point{300, 350});
-    poly.add(Point{500, 350});
-    poly.add(Point{500, 200});
+    // Polygon poly;
+    // poly.add(Point{300, 200});
+    // poly.add(Point{300, 350});
+    // poly.add(Point{500, 350});
+    // poly.add(Point{500, 200});
 
-    poly.set_color(Color::red);
-    win.attach(poly);
+    // poly.set_color(Color::red);
+    // win.attach(poly);
 
-    Rectangle r (Point{200, 200}, 100, 30);
-    r.set_color(Color::blue);
+    Rectangle r (Point{200, 200}, 150, 100);
+    r.set_color(Color::red);
     win.attach(r);
-    Text txt {Point{210, 210}, "Hello"};
+    Text txt {Point{210, 210}, "Moja pierwsza kompozycja."};
     win.attach(txt);
 
     Closed_polyline poly_rect;
-    poly_rect.add(Point{100, 50});
-    poly_rect.add(Point{200, 50});
-    poly_rect.add(Point{200, 100});
-    poly_rect.add(Point{100, 100});
-    poly_rect.add(Point{50, 75});
+    poly_rect.add(Point{300, 100});
+    poly_rect.add(Point{200, 300});
+    poly_rect.add(Point{400, 300});
     win.attach(poly_rect);
+
+    Circle c (Point{150,150}, 50);
+    c.set_color(Color::blue);
+    win.attach(c);
     
     Axis xa{Axis::x, Point(20,300), 280, 10, "Os x"};
     win.attach(xa);
@@ -89,7 +92,6 @@ int main(){
 
     Text t {Point{150, 150}, "Hello world!"};
     win.attach(t);
-    */
     
     win.set_label("Test");
     win.wait_for_button();
