@@ -42,6 +42,8 @@ target_link_libraries(StroustrupGUI PUBLIC
 
 add_executable(CppGuiPractice
     main.cpp
+    Board.hpp
+    Board.cpp
 )
 
 target_link_libraries(CppGuiPractice PRIVATE
